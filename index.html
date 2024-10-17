@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator V1.0</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+	<div class="main-content">
+	
+		<div class="calc-container">
+		
+		<div class="calc-output-container">
+		
+			<div id="calc-output" class="calc-output"></div>
+		
+		</div>
+		
+		<div class="calc-input-container">
+			
+ 			<div class="calc-input-top">
+			
+				<div class="calc-input-button AC" onclick="reset()">AC</div>
+				<div class="calc-input-button +/-">+/-</div>
+				<div class="calc-input-button %">%</div>
+			
+			</div>
+			
+			<div class="calc-input-side">
+			
+				<div class="calc-input-button ÷" onclick="num_append('/')">÷</div>
+				<div class="calc-input-button ×" onclick="num_append('*')">×</div>
+				<div class="calc-input-button −" onclick="num_append('-')">−</div>
+				<div class="calc-input-button +" onclick="num_append('+')">+</div>
+				<div class="calc-input-button =" onclick="calculate()">=</div>
+			
+			</div>
+			
+			<div class="calc-input-numbers">
+				<div class="calc-input-button 7" onclick="num_append('7')">7</div>
+				<div class="calc-input-button 8" onclick="num_append('8')">8</div>
+				<div class="calc-input-button 9" onclick="num_append('9')">9</div>
+				<div class="calc-input-button 4" onclick="num_append('4')">4</div>
+				<div class="calc-input-button 5" onclick="num_append('5')">5</div>
+				<div class="calc-input-button 6" onclick="num_append('6')">6</div>
+				<div class="calc-input-button 1" onclick="num_append('1')">1</div>
+				<div class="calc-input-button 2" onclick="num_append('2')">2</div>
+				<div class="calc-input-button 3" onclick="num_append('3')">3</div>
+				<div class="calc-input-button zeroButton" onclick="num_append('0')">0</div>
+				<div class="calc-input-button dotButton" onclick="num_append('.')">.</div>
+			</div>
+			
+		</div>
+	
+	</div>
+  
+	<script src="app.js"></script>
+  </body>
+</html>
